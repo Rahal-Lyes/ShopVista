@@ -1,1 +1,1 @@
-![Dashboad]('./client/dashboard.png')
+![Dashboad]('./client/ShopVista/src/assets/dashboard.png')
