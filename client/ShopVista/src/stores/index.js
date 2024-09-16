@@ -1,4 +1,4 @@
-import { createStore } from "vuex";
+import { createStore } from 'vuex';
 
 const store = createStore({
   state() {
@@ -7,9 +7,17 @@ const store = createStore({
     };
   },
   mutations: {
-    isShow(state) {
+    toggleShow(state) {
       state.show = !state.show;
     },
+  },
+  actions: {  
+    toggleShow({ commit }) {
+      commit('toggleShow');
+    },
+  },
+  getters: {
+    show: (state) => state.show,
   },
 });
 
